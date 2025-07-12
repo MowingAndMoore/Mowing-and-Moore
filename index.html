@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mowing and Moore</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f0f8f5;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(120deg, #2e8b57, #3cb371);
+      color: white;
+      padding: 2.5rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+    }
+    nav {
+      background: #246b45;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #d4ffd4;
+    }
+    section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    section h2 {
+      margin-bottom: 1rem;
+      color: #2e8b57;
+    }
+    /* Our Services upgraded styles */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.8rem;
+      margin-top: 1rem;
+    }
+    .service-card {
+      background: #f9fff9;
+      border-radius: 12px;
+      padding: 1.5rem 1rem;
+      box-shadow: 0 4px 8px rgba(46, 139, 87, 0.15);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 8px 20px rgba(46, 139, 87, 0.3);
+    }
+    .service-card i {
+      color: #2e8b57;
+      margin-bottom: 0.5rem;
+    }
+    .service-card h3 {
+      margin-bottom: 0.5rem;
+      color: #246b45;
+      font-weight: 600;
+    }
+    .service-card p {
+      font-size: 0.95rem;
+      color: #555;
+    }
+    /* Contact button styling */
+    .contact-button {
+      background: #2e8b57;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .contact-button:hover {
+      background: #246b45;
+    }
+    footer {
+      background: #2e8b57;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mowing and Moore</h1>
+    <p>Reliable Lawn Care by Hardworking Teen Twin Brothers</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      Welcome to Mowing and Moore! We’re a team of teenage twin brothers providing quality lawn care services at affordable prices. Whether you need regular mowing or seasonal cleanup, we have you covered. Our commitment is to make your yard look its best — because your curb appeal matters!
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-cut fa-2x" aria-hidden="true"></i>
+        <h3>Lawn Mowing</h3>
+        <p>Keep your lawn neat and trimmed with regular mowing.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-seedling fa-2x" aria-hidden="true"></i>
+        <h3>Weed Eating</h3>
+        <p>Remove weeds and unwanted growth to keep your yard clean.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-ruler-combined fa-2x" aria-hidden="true"></i>
+        <h3>Edging</h3>
+        <p>Define clean edges along sidewalks, driveways, and beds.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-leaf fa-2x" aria-hidden="true"></i>
+        <h3>Seasonal Cleanup</h3>
+        <p>Prepare your yard for every season with expert cleanup.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-tree fa-2x" aria-hidden="true"></i>
+        <h3>Small Landscaping Projects</h3>
+        <p>Enhance your outdoors with simple, affordable landscaping.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or want a free estimate? Click the button below to send us a message!</p>
+    <a href="https://docs.google.com/forms/d/1AT28izzmwH4UZiI_1E7tkey-lBeOmIqHt3lCQpEDvvY/edit" target="_blank" rel="noopener noreferrer" class="contact-button">
+      Contact Us
+    </a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mowing and Moore | All rights reserved</p>
+  </footer>
+</body>
+</html>
